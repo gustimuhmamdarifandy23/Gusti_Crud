@@ -6,6 +6,6 @@ class ApiEndPoint {
         val CREATE =SERVER+"create_fakuktas.php"
         val READ =  SERVER+"read_fakuktas.php"
         val UPDATE = SERVER+"update_fakultas.php"
-        val DETETE = SERVER+"delete_fakultas.php"
+        val DELETE = SERVER+"delete_fakultas.php"
     }
 }

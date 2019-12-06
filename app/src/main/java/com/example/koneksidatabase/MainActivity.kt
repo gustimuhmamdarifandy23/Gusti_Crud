@@ -55,7 +55,8 @@ class MainActivity : AppCompatActivity() {
                     }
                     for (i in 0 until jsonArray?.length()!!){
                         val jsonObject = jsonArray?.optJSONObject(i)
-                        arrayList.add(Fakultas(jsonObject.getString("kode_fakultas")
+
+                        arrayList.add(Fakultas(jsonObject.getString("id_fakultas"),jsonObject.getString("kode_fakultas")
                             ,jsonObject.getString("nama_fakultas")))
                         if(jsonArray?.length()-1 == i){
                             loading.dismiss()
